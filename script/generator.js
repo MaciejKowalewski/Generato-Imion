@@ -1,9 +1,22 @@
+(function(){
+    let btn = document.querySelector('button');
+        btn.addEventListener('click', losujImie);
+}())
+
 function losujImie() {
-    let imie = [],
-        alfabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'x', 'y', 'z'];
+    let name = [],
+        alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'w', 'x', 'y', 'z'],
+        output = document.querySelector('textarea'),
+        inputs = document.querySelectorAll('input');
     for (let i = 0; i < Math.floor((Math.random() * 24) + 1); i++) {
-        imie[i] = alfabet[Math.floor((Math.random() * alfabet.length) + 1)];
+        name[i] = alphabet[Math.floor((Math.random() * alphabet.length))];
     }
-    imie[0] = imie[0].toUpperCase();
-    return imie.join('');
+    if(inputs[0].checked){
+        name[name.length-1] = 'a';
+    }
+    else if(inputs[2].checked){
+        name[name.length-1] = 'o';
+    }
+    name[0] = name[0].toUpperCase();
+    output.textContent = name.join('');
 }

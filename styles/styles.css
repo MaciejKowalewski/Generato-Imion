@@ -1,11 +1,12 @@
 section{
     width: 250px;
-    background-color: aqua;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 form{
@@ -24,6 +25,7 @@ h1{
 }
 
 textarea{
+    margin-top: 10px;
     resize: none;
     height: 15px;
     width: 100%;

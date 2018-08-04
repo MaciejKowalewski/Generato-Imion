@@ -1,0 +1,32 @@
+section{
+    width: 250px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+input{
+    margin: 5px;
+}
+
+h1{
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+textarea{
+    resize: none;
+    height: 15px;
+    width: 100%;
+    border: 0;
+    background-color: rgb(227, 227, 227)
+}

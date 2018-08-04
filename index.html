@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Generator imion!</title>
 </head>
 
 <body>
-    <h1>Wybierz płeć!</h1>
-    <form>
-        <label for="male">Dziewczynka</label>
-        <input type="radio" name="gender" id="male" value="male">
-        <label for="female">Chłopiec</label>
-        <input type="radio" name="gender" id="female" value="female">
-        <label for="other">Coś</label>
-        <input type="radio" name="gender" id="other" value="other">
-        <input type="submit" value="Generuj imię!">
-    </form>
-    <textarea></textarea>
+    <section>
+        <h1>Wybierz płeć!</h1>
+        <form>
+            <div>
+                <label for="male">Dziewczynka</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Chłopiec</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+            <div>
+                <label for="other">Coś</label>
+                <input type="radio" name="gender" id="other" value="other">
+            </div>
+            <div>
+                <input type="submit" value="Generuj imię!">
+            </div>
+        </form>
+        <textarea></textarea>
+    </section>
 </body>
+
 </html>
